@@ -12,8 +12,6 @@ const VideoRoom = ({ roomId }: { roomId: string }) => {
         const start = async () => {
             const { ZegoUIKitPrebuilt } = await import("@zegocloud/zego-uikit-prebuilt");
 
-            console.log("here");
-
             const appId = process.env.NEXT_PUBLIC_ZEEGO_APP_ID;
             const serverSecret = process.env.NEXT_PUBLIC_ZEEGO_SERVER_SECRET!;
             const userId = crypto.randomUUID();
@@ -50,7 +48,7 @@ const VideoRoom = ({ roomId }: { roomId: string }) => {
     }, [])
 
     return (
-        <div ref={containerRef} className='w-full h-screen' />
+        <div ref={containerRef} className='w-full h-[90vh]' />
     )
 }
 
