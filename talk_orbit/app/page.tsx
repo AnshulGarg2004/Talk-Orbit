@@ -120,9 +120,8 @@ const Home = () => {
                                 
                                 </div>
                             </div>
-                            <div className='flex-1 relative'>
                                 <VideoRoom roomId={roomId} />
-                            </div>
+                            
                         </motion.div>
                     )}
                 </AnimatePresence>
